@@ -1,0 +1,168 @@
+:root {
+  font-size: 10px;
+}
+body {
+  color: black;
+}
+.garage {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10rem;
+}
+.table {
+  margin-bottom: 10rem;
+}
+.table td, .table th {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.table th {
+  background: blue;
+  color: aliceblue;
+}
+.table-button {
+  cursor: pointer;
+}
+.table-button.asc::after {
+  content: '↑';
+}
+.table-button.desc:after {
+  content: '↓';
+}
+.garage .car {
+  width: 10rem;
+}
+.race-controls {
+  margin-bottom: 10rem;
+}
+.menu {
+  margin-bottom: 5rem;
+}
+.icon {
+  cursor: pointer;
+  background: none;
+  border: 0.1rem solid;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: orange;
+  padding: 0 0.5rem 0.3rem 0.5rem;
+}
+.icon:hover {
+  color: lightblue;
+}
+.icon:disabled {
+  color: grey;
+  cursor: auto;
+}
+.icon.enabling {
+  color: lightblue;
+}
+.start-engine-button {
+  color: green;
+}
+.stop-engine-button {
+  color:red;
+}
+.control-panel {
+  padding: 1rem 2rem 1rem 0;
+}
+.car {
+  width: 5rem;
+  padding: 3rem 0 0;
+}
+.road {
+  display: flex;
+  margin-bottom: 2rem;
+  border-bottom: 0.5rem solid black;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.launch-pad {
+  display: flex;
+}
+.flag {
+  padding: 2rem 0 0;
+  color: red;
+  font-size: 5rem;
+  margin-top: -5rem;
+  transform: translateX(-10rem);
+}
+.button {
+  font-size: 1.4rem;
+  line-height: 1rem;
+  font-weight: 700;
+  background: #2196F3;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem;
+  width: 10rem;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.button:hover {
+  background: #1565a7;
+}
+.button.primary {
+  background: lightseagreen;
+  cursor: pointer;
+}
+.button.primary:hover {
+  background: rgb(23, 121, 116);
+}
+.button:disabled {
+  background: grey;
+}
+.generator {
+  margin-bottom: 5rem;
+}
+.button.generator-button {
+  width: 16rem;
+}
+.form {
+  height: 5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 37rem;
+}
+.input {
+  border: 0;
+  border-radius: 0.5rem;
+  background: silver;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  height: 2rem;
+  width: 20rem;
+}
+.input:disabled {
+  background: grey;
+}
+.color {
+  border: 0;
+  border-radius: 0.5rem;
+  background: silver;
+  height: 3rem;
+}
+.color:disabled {
+  background: grey;
+}
+.car-name {
+  font-weight: 700;
+  font-size: 2rem;
+  padding-left: 2rem;
+  color: darkgoldenrod;
+}
+.message {
+  top: 50%;
+  left: calc(50% - 25rem);
+  text-align: center;
+  display: none;
+  position: fixed;
+  font-size: 5rem;
+  color: gold;
+  width: 50rem;
+}
+.message.visible {
+  display: block;
+}
